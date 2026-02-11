@@ -1,3 +1,12 @@
+/**
+ * @file Firefox user.js - Windows
+ * @author HellPC
+ * @date 2026.02.11
+ * @link https://github.com/He11PC/firefox-user-js
+ * @license MIT
+ */
+
+
 /** ------------ **/
 /** QUICK ACCESS **/
 /** ------------ **/
