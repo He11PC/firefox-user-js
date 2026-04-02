@@ -85,18 +85,16 @@ user_pref("gfx.canvas.accelerated", true);
 user_pref("gfx.canvas.accelerated.cache-items", 16384);
 user_pref("gfx.canvas.accelerated.cache-size", 2048);
 user_pref("gfx.content.skia-font-cache-size", 40);
-user_pref("gfx.direct3d11.reuse-decoder-device-force-enabled", true); // Can be unstable
 user_pref("gfx.webrender.all", true);
 user_pref("gfx.webrender.precache-shaders", true);
-user_pref("gfx.webrender.program-binary-disk", true);
+//user_pref("gfx.webrender.program-binary-disk", true); // Can be unstable
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
-user_pref("gfx.x11-egl.force-enabled", true); // Can be unstable
-//user_pref("layers.gpu-process.enabled", true); // Doesn't work with Wayland
+//user_pref("gfx.x11-egl.force-enabled", true); // x11, can be unstable
+//user_pref("layers.gpu-process.enabled", true); // Can be unstable with Wayland
 user_pref("media.ffmpeg.vaapi.enabled", true);
 user_pref("media.gpu-process-decoder", true);
 user_pref("media.hardware-video-decoding.force-enabled", true);
 user_pref("media.webrtc.hw.h264.enabled", true);
-user_pref("media.wmf.zero-copy-nv12-textures-force-enabled", true);
 //user_pref("widget.dmabuf.force-enabled", true); // Can be unstable and blocklisted by gfxInfo with nVidia GPU
 user_pref("widget.wayland.fractional-scale.enabled", true);
 

@@ -81,16 +81,16 @@ user_pref("gfx.canvas.accelerated", true);
 user_pref("gfx.canvas.accelerated.cache-items", 16384);
 user_pref("gfx.canvas.accelerated.cache-size", 2048);
 user_pref("gfx.content.skia-font-cache-size", 40);
-user_pref("gfx.direct3d11.reuse-decoder-device-force-enabled", true); // Can be unstable
+//user_pref("gfx.direct3d11.reuse-decoder-device-force-enabled", true); // Can be unstable
 user_pref("gfx.webrender.all", true);
 user_pref("gfx.webrender.dcomp-video-overlay-win-force-enabled", true);
 user_pref("gfx.webrender.precache-shaders", true);
-user_pref("gfx.webrender.program-binary-disk", true);
+//user_pref("gfx.webrender.program-binary-disk", true); // Can be unstable
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
 user_pref("media.gpu-process-decoder", true);
 user_pref("media.hardware-video-decoding.force-enabled", true);
 user_pref("media.webrtc.hw.h264.enabled", true);
-user_pref("media.wmf.zero-copy-nv12-textures-force-enabled", true); // Can be unstable
+//user_pref("media.wmf.zero-copy-nv12-textures-force-enabled", true); // Can be unstable
 
 /** NETWORK **/
 user_pref("network.buffer.cache.size", 262144);
