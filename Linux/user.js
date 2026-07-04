@@ -32,8 +32,7 @@ user_pref("dom.webnotifications.enabled", false);
 //user_pref("media.av1.enabled", false);
 
 // Enable HDR on wayland if you want to try it
-//user_pref("gfx.wayland.hdr", true); // Can create glitches
-//user_pref("gfx.webrender.compositor.force-enabled", true); // Can be unstable, blocklisted by gfxInfo
+//user_pref("gfx.color_management.hdr", true); // Can create glitches
 
 
 /** ------------ **/
@@ -86,6 +85,7 @@ user_pref("gfx.canvas.accelerated.cache-items", 16384);
 user_pref("gfx.canvas.accelerated.cache-size", 2048);
 user_pref("gfx.content.skia-font-cache-size", 40);
 user_pref("gfx.webrender.all", true);
+//user_pref("gfx.webrender.compositor.force-enabled", true); // Can be unstable, blocklisted by gfxInfo
 user_pref("gfx.webrender.precache-shaders", true);
 //user_pref("gfx.webrender.program-binary-disk", true); // Can be unstable
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
