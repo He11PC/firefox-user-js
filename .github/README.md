@@ -10,13 +10,13 @@ Many of these settings come from:
 
 ---
 
-## Files:
+## Files
 
 You can find a *user.js* file for **Linux** and for **Windows** on their respective directories.
 
 ---
 
-## Usage:
+## Usage
 
 Download the *user.js* file for your operating system or create a new one and copy/paste its contents.
 
@@ -34,7 +34,7 @@ Restart Firefox to apply the settings.
 
 ---
 
-## Troubleshooting:
+## Troubleshooting
 
 As indicated in the *user.js* files, some of these settings may be unstable in certain configurations.  
 For example: `user_pref("gfx.direct3d11.reuse-decoder-device-force-enabled", true); // Can be unstable`
