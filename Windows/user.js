@@ -142,11 +142,15 @@ user_pref("geo.provider.use_corelocation", false);
 user_pref("geo.provider.use_gpsd", false);
 user_pref("geo.provider.use_geoclue", false);
 
-/** PRIVACY **/
+/** TRACKING **/
 user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("dom.private-attribution.submission.enabled", false);
+user_pref("network.http.referer.XOriginPolicy", 1); // May cause issues on some websites (0 by default)
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
+//user_pref("privacy.trackingprotection.allow_list.baseline.enabled", false);
+user_pref("privacy.trackingprotection.allow_list.convenience.enabled", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 
 /** RECOMMENDATIONS **/
@@ -163,6 +167,7 @@ user_pref("browser.urlbar.addons.featureGate", false);
 user_pref("browser.urlbar.amp.featureGate", false);
 user_pref("browser.urlbar.fakespot.featureGate", false);
 user_pref("browser.urlbar.mdn.featureGate", false);
+user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.trending.featureGate", false);
@@ -280,9 +285,6 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.disable_window_move_resize", true);
 user_pref("dom.security.https_only_mode", true);
 user_pref("dom.security.https_only_mode_send_http_background_request", false);
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
-//user_pref("privacy.trackingprotection.allow_list.baseline.enabled", false);
-user_pref("privacy.trackingprotection.allow_list.convenience.enabled", false);
 user_pref("security.cert_pinning.enforcement_level", 2);
 user_pref("security.csp.reporting.enabled", false);
 user_pref("security.pki.crlite_mode", 3);
