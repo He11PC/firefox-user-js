@@ -1,7 +1,7 @@
 /**
  * @file Firefox user.js - Linux
  * @author HellPC
- * @date 2026.02.11
+ * @date 2026.08.04
  * @link https://github.com/He11PC/firefox-user-js
  * @license MIT
  */
@@ -85,17 +85,15 @@ user_pref("gfx.canvas.accelerated.cache-items", 16384);
 user_pref("gfx.canvas.accelerated.cache-size", 2048);
 user_pref("gfx.content.skia-font-cache-size", 40);
 user_pref("gfx.webrender.all", true);
-//user_pref("gfx.webrender.compositor.force-enabled", true); // Can be unstable, blocklisted by gfxInfo
+//user_pref("gfx.webrender.compositor.force-enabled", true); // Can be unstable, force OS native compositing, feature disabled by Mozilla
 user_pref("gfx.webrender.precache-shaders", true);
-//user_pref("gfx.webrender.program-binary-disk", true); // Can be unstable
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
-//user_pref("gfx.x11-egl.force-enabled", true); // x11, can be unstable
-//user_pref("layers.gpu-process.enabled", true); // Can be unstable with Wayland
+//user_pref("gfx.x11-egl.force-enabled", true); // Can be unstable on old hardware/drivers, force EGL rendering on X11 (https://www.khronos.org/egl/)
 user_pref("media.ffmpeg.vaapi.enabled", true);
 user_pref("media.gpu-process-decoder", true);
 user_pref("media.hardware-video-decoding.force-enabled", true);
 user_pref("media.webrtc.hw.h264.enabled", true);
-//user_pref("widget.dmabuf.force-enabled", true); // Can be unstable and blocklisted by gfxInfo with nVidia GPU
+//user_pref("widget.dmabuf.force-enabled", true); // Can be unstable, blocklisted by gfxInfo for nVidia GPU, force Direct Memory Access Buffer for graphics rendering & video decoding
 user_pref("widget.wayland.fractional-scale.enabled", true);
 
 /** NETWORK **/
@@ -156,10 +154,10 @@ user_pref("browser.contentanalysis.default_allow", false);
 user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("dom.private-attribution.submission.enabled", false);
-user_pref("network.http.referer.XOriginPolicy", 1); // May cause issues on some websites (0 by default)
+//user_pref("network.http.referer.XOriginPolicy", 1); // May cause issues on some websites, HTTP referer: 0=always send (default), 1=send iff base domains match, 2=send iff hosts match
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
-//user_pref("privacy.trackingprotection.allow_list.baseline.enabled", false);
-user_pref("privacy.trackingprotection.allow_list.convenience.enabled", false);
+//user_pref("privacy.trackingprotection.allow_list.baseline.enabled", false); // May cause issues on some websites, disable "Fix major site issues" in Strict Enhanced Tracking Protection
+user_pref("privacy.trackingprotection.allow_list.convenience.enabled", false); // Disable "Fix minor website issues" in Strict Enhanced Tracking Protection
 user_pref("toolkit.winRegisterApplicationRestart", false);
 
 /** RECOMMENDATIONS **/
