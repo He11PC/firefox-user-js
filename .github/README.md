@@ -8,13 +8,13 @@ Many of these settings come from:
 - [Yokoffing - Betterfox](https://github.com/yokoffing/Betterfox)
 - [CachyOS - cachyos.js](https://github.com/CachyOS/CachyOS-PKGBUILDS/blob/master/cachyos-firefox-settings/cachyos.js)
 
----
+<br>
 
 ## Files
 
 You can find a *user.js* file for **Linux** and for **Windows** on their respective directories.
 
----
+<br>
 
 ## Usage
 
@@ -32,7 +32,7 @@ Move the *user.js* file to your Firefox profile directory:
 
 Restart Firefox to apply the settings.
 
----
+<br>
 
 ## Troubleshooting
 
