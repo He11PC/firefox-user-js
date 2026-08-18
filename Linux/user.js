@@ -1,7 +1,7 @@
 /**
  * @file Firefox user.js - Linux
  * @author HellPC
- * @date 2026.08.04
+ * @date 2026.08.18
  * @link https://github.com/He11PC/firefox-user-js
  * @license MIT
  */
@@ -41,6 +41,7 @@ user_pref("dom.webnotifications.enabled", false);
 
 /** COLORS **/
 user_pref("gfx.color_management.mode", 1);
+//user_pref("gfx.color_management.native_srgb", true); // Let the compositor handle color management instead of Firefox, Wayland only
 
 /** CUSTOMIZATION **/
 user_pref("browser.tabs.insertAfterCurrent", false);
