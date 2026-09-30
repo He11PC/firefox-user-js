@@ -1,7 +1,7 @@
 /**
  * @file Firefox user.js - Linux
  * @author HellPC
- * @date 2026.08.18
+ * @date 2026.09.30
  * @link https://github.com/He11PC/firefox-user-js
  * @license MIT
  */
