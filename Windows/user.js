@@ -31,6 +31,9 @@ user_pref("dom.webnotifications.enabled", false);
 // Disable AV1 codec if your video card can't decode it
 //user_pref("media.av1.enabled", false);
 
+// Disable Nova interface
+//user_pref("browser.nova.enabled", false);
+
 
 /** ------------ **/
 /** EASE OF LIFE **/

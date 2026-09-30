@@ -34,6 +34,9 @@ user_pref("dom.webnotifications.enabled", false);
 // Enable HDR on wayland if you want to try it
 //user_pref("gfx.color_management.hdr", true); // Can create glitches
 
+// Disable Nova interface
+//user_pref("browser.nova.enabled", false);
+
 
 /** ------------ **/
 /** EASE OF LIFE **/
